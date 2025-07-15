@@ -2,5 +2,7 @@ azureml-core
 python-dotenv
 ipykernel
 transformers==4.37.2
-datasets==2.4.0
+datasets==2.15.0
 torch
+huggingface_hub
+fsspec
