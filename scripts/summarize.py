@@ -36,6 +36,7 @@ def summarize(url, path):
         return
     result=summarize_text(text)
     click.echo("*"*20)
+    click.echo(f"Summarized text from {url or path} ->")
     click.echo(result[0]["summary_text"])
 
 if __name__=="__main__":
