@@ -1,4 +1,5 @@
 azureml-core
+azureml-opendatasets
 python-dotenv
 ipykernel
 transformers==4.37.2
@@ -6,3 +7,5 @@ datasets==2.15.0
 torch
 huggingface_hub
 fsspec
+beautifulsoup4
+click
