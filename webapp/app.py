@@ -34,3 +34,6 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5000,debug=True)
+
+#run predict like this 
+#curl -X POST -H "Content-Type: application/json" -d '{\"text\": \"This is so good. I love it\"}' http://0.0.0.0:5000/predict 
