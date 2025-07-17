@@ -8,7 +8,9 @@ torch
 huggingface_hub
 fsspec
 beautifulsoup4
-click
-flask
 onnxruntime
 onnx
+click==8.1.7
+flask==3.0.3
+uvicorn==0.35.0
+fastapi==0.116.1

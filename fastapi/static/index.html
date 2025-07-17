@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+        input, button {
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        #result {
+            margin-top: 1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Generator</h1>
+    <p>Enter words or sentence to generate text:</p>
+    <input type="text" id="text1" placeholder="Enter words" />
+    <button onclick="generateText()">Generate</button>
+
+    <div id="result"></div>
+
+    <script>
+        async function generateText() {
+            const text1 = document.getElementById("text1").value;
+            const response = await fetch("/generate", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: text1 || null })
+            });
+
+            const data = await response.json();
+            document.getElementById("result").textContent = "Generated Text: " + data.generated_text;
+        }
+    </script>
+</body>
+</html>
