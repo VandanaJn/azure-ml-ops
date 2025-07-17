@@ -207,3 +207,4 @@ marimo/_lsp/
 __marimo__/
 rustup-init.exe
 output/*
+*/roberta_sentiment.onnx
