@@ -9,3 +9,6 @@ huggingface_hub
 fsspec
 beautifulsoup4
 click
+flask
+onnxruntime
+onnx
